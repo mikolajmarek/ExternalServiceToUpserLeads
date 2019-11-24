@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>MikolajLeadService</members>
+        <members>MikolajLeadServiceTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Lead.Created_Date__c</members>
+        <members>Lead.UUID__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Lead.LastName_Phone_id_cannot_be_empty</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>47.0</version>
+</Package>

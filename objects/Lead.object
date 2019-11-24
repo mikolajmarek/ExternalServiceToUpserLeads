@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Created_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Created Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>UUID__c</fullName>
+        <description>External ID</description>
+        <externalId>true</externalId>
+        <label>UUID</label>
+        <length>255</length>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>LastName_Phone_id_cannot_be_empty</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( OR( ISBLANK(LastName) ,ISBLANK(Phone),ISBLANK(UUID__c)) , true, false)</errorConditionFormula>
+        <errorMessage>Missing Required fields - Last Name, id or phone</errorMessage>
+    </validationRules>
+</CustomObject>
